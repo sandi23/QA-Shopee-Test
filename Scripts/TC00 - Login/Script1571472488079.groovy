@@ -29,7 +29,9 @@ WebUI.setText(findTestObject('Object Repository/TC01 - Create gist/input_Forgot 
 
 WebUI.click(findTestObject('Object Repository/TC01 - Create gist/input_Forgot password_commit'))
 
-not_run: WebUI.setText(findTestObject('Object Repository/TC01 - Create gist/input_Device verification code'), '936718')
+'dynamic code\r\n'
+not_run: WebUI.setText(findTestObject('Object Repository/TC01 - Create gist/input_Device verification code'), '')
 
+'dynamic condition'
 not_run: WebUI.click(findTestObject('Object Repository/TC01 - Create gist/button_Verify'))
 

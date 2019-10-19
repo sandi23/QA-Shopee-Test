@@ -15,23 +15,23 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('TC00 - Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/summary_New project_Header-lin'))
+WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/summary_New project_Header-lin'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/a_Your gists'))
+WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/a_Your gists'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/span_View create gist number 1'))
+WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/span_View create gist number 1'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/a_Edit'))
+WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/a_Edit'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Object Repository/TC02 - Edit gist/input_Delete_gistdescription'), 'edit gist')
+WebUI.setText(findTestObject('Object Repository/TC02 - Edit gist/input_Delete_gistdescription'), 'edit gist', FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Object Repository/TC02 - Edit gist/input_Delete_gistcontentsname'), 'edit gist number 1')
+WebUI.setText(findTestObject('Object Repository/TC02 - Edit gist/input_Delete_gistcontentsname'), 'edit gist number 1', 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/span_sdsd'))
+WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/span_sdsd'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Object Repository/TC02 - Edit gist/div_1sdsssd'), '<div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation" style=""><span role="presentation" style="padding-right: 0.1px;">sdsssd</span></pre></div>')
+WebUI.setText(findTestObject('Object Repository/TC02 - Edit gist/div_1sdsssd'), '<div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation" style=""><span role="presentation" style="padding-right: 0.1px;">sdsssd</span></pre></div>', 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/button_Update public gist'))
-
-WebUI.rightClick(findTestObject('Object Repository/TC02 - Edit gist/button_Delete'))
+WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/button_Update public gist'), FailureHandling.CONTINUE_ON_FAILURE)
 

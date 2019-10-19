@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('TC00 - Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/summary_New project_Header-lin'))
+WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/summary_New project_Header-lin'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/a_Your gists'))
+WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/a_Your gists'), FailureHandling.CONTINUE_ON_FAILURE)
 

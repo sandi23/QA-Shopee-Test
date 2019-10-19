@@ -15,18 +15,19 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('TC00 - Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/TC01 - Create gist/summary_Sign out_Header-link'))
+WebUI.click(findTestObject('Object Repository/TC01 - Create gist/summary_Sign out_Header-link'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/TC01 - Create gist/a_New gist'))
+WebUI.click(findTestObject('Object Repository/TC01 - Create gist/a_New gist'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Object Repository/TC01 - Create gist/input_See all of your gists_gi'), 'create gist')
+WebUI.setText(findTestObject('Object Repository/TC01 - Create gist/input_See all of your gists_gi'), 'create gist', FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Object Repository/TC01 - Create gist/input_See all of your gists_gi_8'), 'create gist number 1')
+WebUI.setText(findTestObject('Object Repository/TC01 - Create gist/input_See all of your gists_gi_8'), 'create gist number 1', 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: WebUI.click(findTestObject('TC01 - Create gist/pre_'), FailureHandling.CONTINUE_ON_FAILURE)
 
 '\r\n'
-WebUI.sendKeys(findTestObject('TC01 - Create gist/pre_'), 'testing create gist', FailureHandling.STOP_ON_FAILURE)
+WebUI.sendKeys(findTestObject('TC01 - Create gist/pre_'), 'testing create gist', FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/TC01 - Create gist/button_Create public gist'))
+WebUI.click(findTestObject('Object Repository/TC01 - Create gist/button_Create public gist'), FailureHandling.CONTINUE_ON_FAILURE)
 

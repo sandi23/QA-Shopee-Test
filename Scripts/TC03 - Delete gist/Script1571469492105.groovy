@@ -15,13 +15,13 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('TC00 - Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/summary_New project_Header-lin'))
+WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/summary_New project_Header-lin'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/a_Your gists'))
+WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/a_Your gists'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/span_View create gist number 1'))
+WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/span_View create gist number 1'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/button_Delete'))
+WebUI.click(findTestObject('Object Repository/TC02 - Edit gist/button_Delete'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.acceptAlert()
+WebUI.acceptAlert(FailureHandling.CONTINUE_ON_FAILURE)
 
